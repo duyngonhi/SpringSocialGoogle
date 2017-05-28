@@ -1,0 +1,10 @@
+<div ng-controller="PeopleFormCtrl">
+	<form ng-submit="getProfile(userId)" class="form-horizontal">
+		<input ng-model="userId" type="text" class="input-large" autofocus="autofocus" placeholder="Enter user ID or 'me'"/>
+		<button type="submit" class="btn">Get Profile</button>
+	</form>
+	<form ng-submit="searchPeople(query)" class="form-horizontal">
+		<input ng-model="query" type="text" class="input-large" autofocus="autofocus" placeholder="Search for someone..."/>
+		<button type="submit" class="btn">Search People</button>
+	</form>
+</div>
